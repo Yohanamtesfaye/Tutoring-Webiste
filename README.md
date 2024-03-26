@@ -63,6 +63,8 @@ The project follows a well-organized directory structure to maintain a clean and
 Don't push to main branch
 
 Deadlines must be met!!
+
+Take the color code from figma
 ## Step by step for pushing your code to github
 Let's say i'm working on dashboard page and after i finished the task wanna push
 
