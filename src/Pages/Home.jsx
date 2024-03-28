@@ -3,9 +3,9 @@
 import React from 'react'
 import { Button } from '@mantine/core';
 import FAQItem from '../Comonents/FAQItem';
-import image1  from '../assets/image1.jpg';
-import image2  from '../assets/image2.jpg';
-import image3  from '../assets/image3.jpg';
+import image1  from '../assets/i1r.png';
+import image2  from '../assets/i2r.png';
+import image3  from '../assets/i3r.png';
 import icon  from '../assets/icon.jpeg';
 import icon2  from '../assets/icon2.jpeg';
 import icon3  from '../assets/icon3.jpeg';
@@ -16,14 +16,14 @@ import "../App.css"
 const Home = () => {
   return (
     <>
-    <div className='bg-[#98ABEE] h-screen text-black '>
+    <div className='bg-white h-screen text-black r'>
 
 <div className='flex justify-between items-center'>
         <div className='w-1/2 p-8'>
           <h1 className='text-7xl font-bold mb-4'>Personalized Tutoring Tailored Just for You</h1>
           <p>Welcome to EleTutor, where learning knows no bounds. Our dedicated team of expert tutors is here to empower you on your academic journey.</p>
           <div className='mt-8'>
-            <Button variant="filled" color="indigo">Get Started</Button>
+            <Button  className='bg-[#4a154b] hover:bg-white hover:text-[#4a154b] border border-[#4a154b] px-20'>Get Started</Button>
           </div>
         </div>
         <div className='animated-img w-1/2 p-8'>
@@ -31,24 +31,26 @@ const Home = () => {
         </div>
       </div>
 
-             <div className='bg-[#becaf7] flex flex-col '>
+             <div className='bg-[#F4EDE4] flex flex-col py-10 '>
 
            
-              <div className='flex justify-center font-bold text-4xl p-3'>Explore Our Grade Options</div>
-               
-
-             <div className='grid sm:grid-cols-5 gap-4 lg:grid-cols-3 p-10  w-screen '>
-               <div><Button variant="filled" size='xl' radius="xl" padding='40'>Preschool</Button></div>
-               <div><Button variant="filled" size='xl' radius="xl">Elemenary School</Button></div>
-               <div><Button variant="filled" size='xl' radius="xl">Middle School</Button></div>
-               <div><Button variant="filled" size='xl' radius="xl"> HighSchool</Button></div>
-               <div><Button variant="filled" size='xl' radius="xl">Collage</Button></div>
+              <div className='flex justify-center font-bold text-4xl mb-5 p-3'>Explore Our Grade Options</div>
+              
+              <div className='lg:flex justify-center mb-10' >
+                <div><Button variant="filled" size='xl' radius="xl" className='bg-[#4a154b] hover:bg-white hover:text-[#4a154b] border border-[#4a154b] mr-44'>Preschool</Button></div>
+                <div><Button variant="filled" size='xl' radius="xl" className='bg-[#4a154b] hover:bg-white hover:text-[#4a154b] border border-[#4a154b] mr-44'>Elemenary School</Button></div>
+                <div><Button variant="filled" size='xl' radius="xl" className='bg-[#4a154b] hover:bg-white hover:text-[#4a154b] border border-[#4a154b] mr'>Middle School</Button></div>
+              </div>
+              <div className='lg:flex justify-center'>
+                <div><Button variant="filled" size='xl' radius="xl" className='bg-[#4a154b] hover:bg-white hover:text-[#4a154b] border border-[#4a154b] mr-44'> HighSchool</Button></div>
+                <div><Button variant="filled" size='xl' radius="xl" className='bg-[#4a154b] hover:bg-white hover:text-[#4a154b] border border-[#4a154b]'>Collage</Button></div>
              </div>
+              
 
               </div>
         
 
-<div className='flex justify-between bg-[#98ABEE]  items-center'>
+<div className='flex justify-between bg-[#F4EDE4]  items-center'>
 
   <div className='animated-img w-1/2 p-8'>
   <img src={image2} alt="Tutor" className='w-full h-auto animate-fadeInRight' />
@@ -61,7 +63,7 @@ const Home = () => {
 </div>
 </div>
 
-<div className='flex justify-between bg-[#becaf7] items-center'>
+<div className='flex justify-between bg-[#F4EDE4] items-center'>
 
  
 <div className='w-1/2 p-8'>
@@ -110,7 +112,7 @@ const Home = () => {
 </div>
 
 
-<div className='flex  bg-blue-500 '>
+<div className='flex  bg-white '>
   <img className='w-1/2 m-5 h-[400px]' src={faq} alt="question marks" />
 
           <div className='flex flex-col mt-5'> 
