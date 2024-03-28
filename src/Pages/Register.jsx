@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
-import studentImage from "../Assets/studentImage.jpg"
+import studentImage from "../assets/studentImage.jpg"
+import Footer from "../Comonents/Footer"
 
-export const Register = () => {
+ const Register = () => {
   return (
-     
-     <div className="bg-darkbg max-w-6xl mt-10 mx-auto flex justify-center items-center flex-col">        
+    <>
+     <div className="bg-darkbg max-w-6xl mt-15 mx-auto flex justify-center items-center flex-col">        
 
      <div className="max-w-6xl rounded-lg shadow dark:bg-gray-800 top-20 ">
         <img className="rounded-t-lg w-80 ml-28" src={studentImage} alt="" />
@@ -32,9 +33,11 @@ export const Register = () => {
         </button></p>
     </div>
 </div>
-
-
     </div>
+    <Footer />
+</>
    
      )
 }
+
+export default Register

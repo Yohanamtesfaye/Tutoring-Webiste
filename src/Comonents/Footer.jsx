@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const Footer = () => {
+ const Footer = () => {
   return (
     <footer className="p-4 bg-blue-400 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
       <span className="text-sm sm:text-center dark:text-gray-400">
@@ -67,3 +67,5 @@ export const Footer = () => {
     
   );
 }
+
+export default Footer
