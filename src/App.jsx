@@ -13,6 +13,8 @@ import '@mantine/core/styles.css';
 
 import { MantineProvider } from '@mantine/core';
 import Navbar from './Comonents/Navbar'
+
+
 function App() {
 
   return (
@@ -28,12 +30,11 @@ function App() {
             <Route path='/tutorregistration' element= {<TutorRegistration/>}/>
             <Route path='/tutordetail' element={<TutorDetails/>}/>
             <Route path='/login' element={<Login/>}/>
-      
 
       </Routes>
      
     </div>
-      </MantineProvider>
+      </MantineProvider>   
     </>
   )
 }
