@@ -5,7 +5,7 @@ import Footer from "../Comonents/Footer"
  const Register = () => {
   return (
     <>
-     <div className="bg-darkbg max-w-6xl mt-15 mx-auto flex justify-center items-center flex-col">        
+     <div className="bg-darkbg w-full mt-15 mx-auto flex justify-center items-center flex-col">        
 
      <div className="max-w-6xl rounded-lg shadow dark:bg-gray-800 top-20 ">
         <img className="rounded-t-lg w-80 ml-28" src={studentImage} alt="" />
@@ -14,7 +14,7 @@ import Footer from "../Comonents/Footer"
        
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-  white ml-28">I am</h5>
        
-        <p className="ml-28 mb-3 font-normal text-gray-700 dark:text-gray-400">A platform where you can teach and learn from other university students.</p>
+        <p className="ml-28 mb-3 font-normal text-black ">A platform where you can teach and learn from other university students.</p>
 
         <p><button className="inline-flex items-center ml-32 w-80 h-12 mb-8 px-3 py-2 font-bold text-lg text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 <Link to='/'> <p className="px-28">parent</p>  </Link>       
@@ -34,6 +34,9 @@ import Footer from "../Comonents/Footer"
     </div>
 </div>
     </div>
+
+
+
     <Footer />
 </>
    
