@@ -9,6 +9,7 @@ import Register from './Pages/Register'
 import StudentRegistration from './Pages/StudentRegistration'
 import TutorRegistration from './Pages/TutorRegistration'
 import TutorDetails from './Pages/TutorDetails'
+import UserLogin from './Pages/UserLogin'
 import '@mantine/core/styles.css';
 
 import { MantineProvider } from '@mantine/core';
@@ -28,6 +29,8 @@ function App() {
             <Route path='/tutorregistration' element= {<TutorRegistration/>}/>
             <Route path='/tutordetail' element={<TutorDetails/>}/>
             <Route path='/login' element={<Login/>}/>
+            <Route path='/userLogin' element={<UserLogin/>}/>
+            <Route path='/userLogin፡id' element={<UserLogin/>}/>
       
 
       </Routes>
