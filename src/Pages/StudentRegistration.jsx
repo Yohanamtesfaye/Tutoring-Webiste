@@ -200,3 +200,4 @@ export const StudentRegistration = () => {
         </div>
     );
 };
+export default StudentRegistration;

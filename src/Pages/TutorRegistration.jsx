@@ -200,3 +200,4 @@ export const TutorRegistration = () => {
         </div>
     );
 };
+export default TutorRegistration;
