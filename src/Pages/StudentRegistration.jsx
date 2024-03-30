@@ -12,9 +12,12 @@ export const StudentRegistration = () => {
         email: '',
         subject:'',
         phoneNumber: '',
+        location: '',
         birthday:'',
+        level:'',
         password: '',
         confirmPassword: '',
+        role: '',
 
     });
     const [errors, setErrors] = useState({});
@@ -47,6 +50,7 @@ export const StudentRegistration = () => {
         if (!formData.email.trim()) {
             validationErrors.email = "Email is required";
         }
+        
         if (!formData.birthday.trim()) {
             validationErrors.birthday= "Date of birth is required";
         }
@@ -58,6 +62,16 @@ export const StudentRegistration = () => {
         if (!formData.subject.trim()) {
             validationErrors.subject = "Subject is required";
           }
+          if (!formData.location.trim()) {
+            validationErrors.location = "Location is required";
+        }
+          if (!formData.level.trim()) {
+            validationErrors.level = "level is required";
+            
+        }
+        if (!formData.role.trim()) {
+            validationErrors.role = "Role is required";
+        }
         if (!formData.password.trim()) {
             validationErrors.password = "Password is required";
         } else if (formData.password.length < 8) {
@@ -79,6 +93,7 @@ export const StudentRegistration = () => {
             
         <form className="form-container" onSubmit={handleSubmit}>
             <h1>Sign-Up</h1>
+            
             <div>
                 <label id='fullname'> Full Name </label>
                 <input
@@ -118,6 +133,32 @@ export const StudentRegistration = () => {
                 />
                 {errors.email && <span style={{ color: 'red' }}>{errors.email}</span>}
             </div>
+            <div>
+                    <label>You are a Registering as a:</label>
+                    <div>
+                        <label id='p'>
+                            <input
+                                type="radio"
+                                name="role"
+                                value="parent"
+                                checked={formData.role === 'parent'}
+                                onChange={handleChange}
+                            />
+                            Parent
+                        </label>
+                        <label id='s'>
+                            <input
+                                type="radio"
+                                name="role"
+                                value="student"
+                                checked={formData.role === 'student'}
+                                onChange={handleChange}
+                            />
+                            Student
+                        </label>
+                    </div>
+                    {errors.role && <span style={{ color: 'red' }}>{errors.role}</span>}
+                </div>
             
             <div>
                 
@@ -132,6 +173,7 @@ export const StudentRegistration = () => {
                 />
                 {errors.birthday && <span style={{ color: 'red' }}>{errors.birthday}</span>}
             </div>
+            <div>
             <label>Phone Number:</label>
         <input
           type="tel"
@@ -143,10 +185,48 @@ export const StudentRegistration = () => {
           onChange={handleChange}
         />
         {errors.phoneNumber && <span style={{ color: 'red' }}>{errors.phoneNumber}</span>}
-            <div>
+            
                 
             </div>
-            
+            <div>
+                    <label>Location:</label>
+                    <select
+                        name="location"
+                        value={formData.location}
+                        onChange={handleChange}
+                    >
+                        <option value="">Select a location</option>
+                        <option value="">Select a location</option>
+                        <option value="Addis Ababa">Addis Ababa</option>
+                        <option value="Dire Dawa">Dire Dawa</option>
+                        <option value="Adama">Adama</option>
+                        <option value="Mekelle">Mekelle</option>
+                        <option value="Gondar">Gondar</option>
+                        <option value="Hawassa">Hawassa</option>
+                        <option value="Others">Others</option>
+                        
+                        
+                    </select>
+                    {errors.location && <span style={{ color: 'red' }}>{errors.location}</span>}
+                </div>
+            <div>
+                    <label>Level:</label>
+                    <select
+                        name="level"
+                        value={formData.level}
+                        onChange={handleChange}
+                    >
+                        <option value="">Select Level</option>
+                        <option value="Pre-School">Pre-School</option>
+                        <option value="Elementary-School"> Elementary-School</option>
+                        <option value="HighSchool">HighSchool</option>
+                        <option value="University">University</option>
+                       
+                        
+                        
+                    </select>
+                    {errors.level && <span style={{ color: 'red' }}>{errors.level}</span>}
+                </div>
             <div>
             <label>What course do you need help with?</label>
         <select

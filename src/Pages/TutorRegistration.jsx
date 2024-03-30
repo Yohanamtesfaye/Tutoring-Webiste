@@ -12,9 +12,15 @@ export const TutorRegistration = () => {
         email: '',
         subject:'',
         phoneNumber: '',
+        location: '',
         birthday:'',
+        level:'',
         password: '',
         confirmPassword: '',
+        cv: null
+        
+    
+        
 
     });
     const [errors, setErrors] = useState({});
@@ -47,6 +53,7 @@ export const TutorRegistration = () => {
         if (!formData.email.trim()) {
             validationErrors.email = "Email is required";
         }
+        
         if (!formData.birthday.trim()) {
             validationErrors.birthday= "Date of birth is required";
         }
@@ -55,9 +62,21 @@ export const TutorRegistration = () => {
           } else if (!/^\d{10}$/.test(formData.phoneNumber)) {
             validationErrors.phoneNumber = "invalied phone number";
           }
+          if (!formData.cv) {
+            validationErrors.cv = "CV is required";
+        }
+
         if (!formData.subject.trim()) {
             validationErrors.subject = "Subject is required";
           }
+          if (!formData.location.trim()) {
+            validationErrors.location = "Location is required";
+        }
+          if (!formData.level.trim()) {
+            validationErrors.level = "level is required";
+            
+        }
+       
         if (!formData.password.trim()) {
             validationErrors.password = "Password is required";
         } else if (formData.password.length < 8) {
@@ -79,6 +98,7 @@ export const TutorRegistration = () => {
             
         <form className="form-container" onSubmit={handleSubmit}>
             <h1>Sign-Up</h1>
+            
             <div>
                 <label id='fullname'> Full Name </label>
                 <input
@@ -118,6 +138,7 @@ export const TutorRegistration = () => {
                 />
                 {errors.email && <span style={{ color: 'red' }}>{errors.email}</span>}
             </div>
+           
             
             <div>
                 
@@ -132,6 +153,7 @@ export const TutorRegistration = () => {
                 />
                 {errors.birthday && <span style={{ color: 'red' }}>{errors.birthday}</span>}
             </div>
+            <div>
             <label>Phone Number:</label>
         <input
           type="tel"
@@ -143,12 +165,50 @@ export const TutorRegistration = () => {
           onChange={handleChange}
         />
         {errors.phoneNumber && <span style={{ color: 'red' }}>{errors.phoneNumber}</span>}
-            <div>
+            
                 
             </div>
-            
             <div>
-            <label>What course do you need to help with?</label>
+                    <label>Location:</label>
+                    <select
+                        name="location"
+                        value={formData.location}
+                        onChange={handleChange}
+                    >
+                        <option value="">Select a location</option>
+                        <option value="">Select a location</option>
+                        <option value="Addis Ababa">Addis Ababa</option>
+                        <option value="Dire Dawa">Dire Dawa</option>
+                        <option value="Adama">Adama</option>
+                        <option value="Mekelle">Mekelle</option>
+                        <option value="Gondar">Gondar</option>
+                        <option value="Hawassa">Hawassa</option>
+                        <option value="Others">Others</option>
+                        
+                        
+                    </select>
+                    {errors.location && <span style={{ color: 'red' }}>{errors.location}</span>}
+                </div>
+            <div>
+                    <label>Level:</label>
+                    <select
+                        name="level"
+                        value={formData.level}
+                        onChange={handleChange}
+                    >
+                        <option value="">Select Level</option>
+                        <option value="Pre-School">Pre-School</option>
+                        <option value="Elementary-School"> Elementary-School</option>
+                        <option value="HighSchool">HighSchool</option>
+                        <option value="University">University</option>
+                       
+                        
+                        
+                    </select>
+                    {errors.level && <span style={{ color: 'red' }}>{errors.level}</span>}
+                </div>
+            <div>
+            <label>What course do you need help with?</label>
         <select
         id='select'
           name="subject"
@@ -170,6 +230,15 @@ export const TutorRegistration = () => {
         {errors.subject && <span style={{ color: 'red' }}>{errors.subject}</span>}
                 
             </div>
+            <div>
+                    <label>CV:</label>
+                    <input
+                        type="file"
+                        name="cv"
+                        onChange={handleChange}
+                    />
+                    {errors.cv && <span style={{ color: 'red' }}>{errors.cv}</span>}
+                </div>
             <div>
                 <label> Password </label>
                 <input
