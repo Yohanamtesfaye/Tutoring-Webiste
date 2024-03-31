@@ -208,7 +208,7 @@ export const TutorRegistration = () => {
                     {errors.level && <span style={{ color: 'red' }}>{errors.level}</span>}
                 </div>
             <div>
-            <label>What course do you need help with?</label>
+            <label>What course do you want to help with?</label>
         <select
         id='select'
           name="subject"
@@ -217,15 +217,13 @@ export const TutorRegistration = () => {
         >
           <option  id='subject'value=""><h1>Select a subject</h1></option>
           <option id='Maths' value="Maths">Maths</option>
-          <option id='Chemistry'value="Chemistry">Chemistry</option>
-          <option id='Psychology'value="Psychology">Psychology</option>
-          <option id='Geography'value="Geography">Geography</option>
-          <option id='Physics'value="Physics">Physics</option>
-          <option id='Economics'value="Economics">Economics</option>
-          <option id='Logic'value="Logic">Logic</option>
-          <option id='C'value="C++">C++</option>
-          <option id='Others'value="Others">Others</option>
-          {/* Add more options as needed */}
+          <option id='Sc'value="Science Courses">Science courses</option>
+          <option id='La'value="Language">Language</option>
+          <option id='ICT'value="ICT">ICT</option>
+
+          
+          <option id='CP'value="Computer Programming">Computer Programming</option>
+          
         </select>
         {errors.subject && <span style={{ color: 'red' }}>{errors.subject}</span>}
                 
