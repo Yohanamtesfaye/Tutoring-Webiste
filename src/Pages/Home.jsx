@@ -12,7 +12,6 @@ import icon3  from '../assets/icon3.jpeg';
 import icon4  from '../assets/icon4.jpeg';
 import faq  from '../assets/faq.jpg';
 import "../App.css"
-import Footer from '../Comonents/Footer';
 
 const Home = () => {
   return (
@@ -136,8 +135,6 @@ const Home = () => {
 
 
    </div>
-
-  
  </>
    )
 }
