@@ -2,6 +2,7 @@
   "tutors":[
     {
       "id":"1",
+      
       "bio" :"A 3rd year software Enginnering Student with a 3.3 CGPA",
       "name": "someone",
       "email": "someone@gmail.com",

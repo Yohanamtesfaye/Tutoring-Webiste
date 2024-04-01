@@ -32,7 +32,6 @@ function App() {
               <Route path='/client' element={<Client/>}/>
               <Route path='/userLogin' element={<UserLogin/>}/>
               <Route path='/userLogin፡id' element={<UserLogin/>}/>
-
         </Routes>
         <Footer/>
       </MantineProvider>
