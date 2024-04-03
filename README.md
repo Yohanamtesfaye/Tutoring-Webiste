@@ -71,7 +71,7 @@ Let's say i'm working on dashboard page and after i finished the task wanna push
 1. creating local branch: git checkout -b [Your branch name]
 2. add changes: git add .
 3. commit your change and your comment has to be explanatory: git commit -m "adding side and nav bar"
-4. push to github:  git push origin dashboard
+4. push to github:  git push origin [Your branch name]
 5. Select your branch on git hub
 6. click to compare and pull request (also while in github)
 7. creating pull request
