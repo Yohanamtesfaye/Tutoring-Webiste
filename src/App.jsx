@@ -14,26 +14,37 @@ import Navbar from './Comonents/Navbar'
 import Client from './Pages/Client'
 import UserLogin from './Pages/UserLogin';
 import { Footer } from 'antd/es/layout/layout';
+import Tutor from './Pages/Tutor';
+import TutorNotification from './Pages/TutorNotification';
+import TutorProfile from './Pages/TutorProfile';
+import TutrorNav from './Comonents/TutrorNav';
 function App() {
-  
 
   return (
     <>
     <div>
       <MantineProvider>
-        <Navbar/>
+      
       <Routes>
-              <Route path='/' element= {<Home/>}/>
-              <Route path='/register' element= {<Register/>}/>
-              <Route path='/studentRegistration' element= {<StudentRegistration/>}/>
-              <Route path='/tutorregistration' element= {<TutorRegistration/>}/>
-              <Route path='/tutordetail/:id' element={<TutorDetails/>}/>
-              <Route path='/login' element={<Login/>}/>
-              <Route path='/client' element={<Client/>}/>
-              <Route path='/userLogin' element={<UserLogin/>}/>
-              <Route path='/userLogin፡id' element={<UserLogin/>}/>
+              <Route element={<Navbar />}>
+                <Route path='/' element= {<Home/>}/>
+                <Route path='/register' element= {<Register/>}/>
+                <Route path='/studentRegistration' element= {<StudentRegistration/>}/>
+                <Route path='/tutorregistration' element= {<TutorRegistration/>}/>
+                <Route path='/tutordetail/:id' element={<TutorDetails/>}/>
+                <Route path='/login' element={<Login/>}/>
+                <Route path='/client' element={<Client/>}/>
+                <Route path='/userLogin' element={<UserLogin/>}/>
+                <Route path='/userLogin፡id' element={<UserLogin/>}/>
+              </Route>
+              <Route element={<TutrorNav/>}>
+                <Route path='/tutor' element={<Tutor/>}/>
+                <Route path='/tutornotification' element={<TutorNotification/>}/>
+                <Route path='/tutorprofile' element={<TutorProfile/>}/>
+              </Route>
+             
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
       </MantineProvider>
     
      

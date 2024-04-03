@@ -2,9 +2,14 @@
   "tutors":[
     {
       "id":"1",
-      
+      "totalEarning": "0.0",
+      "ntotalJob":"0",
+      "nongoingJob":"0",
+      "nTotaldays":"0",
+      "lat":"0",
+      "lon":"0",
       "bio" :"A 3rd year software Enginnering Student with a 3.3 CGPA",
-      "name": "someone",
+      "name": "someone someone",
       "email": "someone@gmail.com",
       "Uni":"Addis Ababa Science and Technology",
       "education": "software Enginnering",
@@ -49,6 +54,19 @@
       "location": "kality",
       "virtual": "true",
       "rating":"5",
+      "subjects": ["Biology", "Chemistry", "Physics"]
+
+    }
+  ],
+  "client":[
+    {
+      "id":"1",
+      "name": "someclient",
+      "email": "someone@gmail.com",
+      "level":["preschool","Elementary School"],
+      "workingDay":["monday", "Tuesday", "Wednesday"],
+      "location": "kality",
+      "virtual": "true",
       "subjects": ["Biology", "Chemistry", "Physics"]
 
     }

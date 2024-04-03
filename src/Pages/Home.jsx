@@ -1,7 +1,6 @@
 //BLUE BACKGROUND
 
 import React from 'react'
-import { Button } from '@mantine/core';
 import FAQItem from '../Comonents/FAQItem';
 import image1  from '../assets/i1r.png';
 import image2  from '../assets/i2r.png';
@@ -17,7 +16,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <>
-    <div className='bg-white h-screen text-black r'>
+    <div className='bg-white h-screen text-black '>
 
 <div className='flex justify-between items-center'>
         <div className='w-1/2 p-8'>
