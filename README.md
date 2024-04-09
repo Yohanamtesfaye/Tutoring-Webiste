@@ -1,6 +1,6 @@
 # Tutoring Website Frontend
 
-welcome to Tutoring Website build using React, tailwind and vite this system links college students seeking tutoring opportunities and families in need of academic support.
+Welcome to our tutoring website built with React, Tailwind, and Vite. Our platform connects college students seeking tutors with families in need of academic support. Students can easily find tutors based on location, academic level, and subject. Tutors have detailed profiles showcasing their qualifications, and booking sessions is convenient. Our communication tools facilitate collaboration, and students can provide feedback and ratings. Join us today for a seamless tutoring experience.
 
 # Get Started
  
